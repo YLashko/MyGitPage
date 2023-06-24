@@ -16,6 +16,7 @@ import Home from './Home.vue';
 import AboutMe from './AboutMe.vue';
 import Projects from './Projects.vue';
 import MenuCategory from './items/MenuCategory.vue';
+import TheLetter from './TheLetter.vue';
 import { shallowRef } from 'vue';
 export default {
     data: function () {
@@ -32,6 +33,10 @@ export default {
                 {
                     name: "Projects",
                     component: shallowRef(Projects)
+                },
+                {
+                    name: "Important!",
+                    component: shallowRef(TheLetter)
                 }
             ],
             selectedCategory: 0

@@ -41,7 +41,7 @@ export default {
     }
 
     .isNotSelected:hover {
-        background-color: rgb(57, 57, 57);;
+        background-color: rgb(57, 57, 57);
         box-shadow: 2px 2px 2px rgb(27, 27, 27);
         transition: all 0.2s ease-in-out;
     }
