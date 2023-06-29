@@ -2,9 +2,7 @@
     <div v-on:click="goToProject(link)" class="project-container card">
         <div class="row">
             <div class="col-lg-8 image-container">
-                <div :id="'image-div-'+this.id" class="image-div">
-                    
-                </div>
+                <img class="card-image" :src="previewImageLink">
             </div>
             <div class="col-lg-4 tech-container">
                 <h2>{{ title }}</h2>
@@ -36,10 +34,6 @@ export default {
         goToProject: function(link) {
             this.router.push(link);
         }
-    },
-    mounted: function() {
-        document.getElementById("image-div-"+this.id).style.backgroundImage = "url('"+this.previewImageLink+"')";
-        console.log(this.previewImageLink);
     }
 }
 </script>
@@ -66,6 +60,7 @@ export default {
         padding: 0 0 0 60%;
     }
 
-    .short-description {
+    .card-image {
+        width: 100%;
     }
 </style>

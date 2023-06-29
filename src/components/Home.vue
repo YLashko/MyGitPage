@@ -3,7 +3,7 @@
         <div class="col-lg-6 inner-col-left">
             <InfoBox 
             title="Education" 
-            v-bind:contents="['Cracow University of Economics', 'Applied Informtics (Informatyka Stosowana)', 'Bachelor\'s degree', 'GPA - 4.4 (expected)', 'Oct 2020 - Oct 2023']">
+            v-bind:contents="['Cracow University of Economics', 'Applied Informatics (Informatyka Stosowana)', 'Bachelor\'s degree', 'GPA - 4.4 (expected)', 'Oct 2020 - Oct 2023']">
             </InfoBox>
             <InfoBox 
             title="Contact me" 

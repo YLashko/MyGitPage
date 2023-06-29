@@ -1,9 +1,11 @@
 <template>
     <div class="row main">
-        <div class="col-lg-3 col-left sticky-lg-top">
-            <MenuCategory v-for="(cat, index) in this.categories"
-            v-bind:key="index" :title="cat.name" :selected="this.isSelected(index)"
-            v-on:click="this.selectCategory(index)" />
+        <div class="col-lg-3 col-left">
+            <div class="sticky-lg-top menu">
+                <MenuCategory v-for="(cat, index) in this.categories"
+                v-bind:key="index" :title="cat.name" :selected="this.isSelected(index)"
+                v-on:click="this.selectCategory(index)" />
+            </div>
         </div>
         <div class="col-lg-9 col-right">
             <component v-bind:is="this.getSelectedCategoryComponent()"></component>
@@ -62,5 +64,9 @@ export default {
 <style scoped>
     .main {
         margin: 0;
+    }
+    .col-left {
+        position: sticky !important;
+        top: 0 !important;
     }
 </style>

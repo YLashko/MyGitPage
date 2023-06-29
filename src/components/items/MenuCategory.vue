@@ -20,6 +20,7 @@ export default {
         border-radius: 8px;
         height: max-content;
         cursor: pointer;
+        z-index: -5;
     }
 
     .isSelected {

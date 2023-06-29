@@ -6,15 +6,17 @@
             :techs="project.techs" 
             :previewImageLink="project.previewImageLink"
             :shortDescription="project.shortDescription"
-            :link="project.link"
+            :link="'/projects/' + project.link"
             :id="index" />
         </div>
         <div class="col-lg-3 order-1 order-lg-2">
-            <info-box :title="'Filter'">
-                <div v-for="(cat, index) in this.categories" v-bind:key="index" v-on:click="this.selectCategory(cat)" :class="{ selected: this.selected == cat }" class="cat-box">
-                    <h2>{{ cat }}</h2>
-                </div>
-            </info-box>
+            <div class="sticky-lg-top">
+                <info-box :title="'Filter'">
+                    <div v-for="(cat, index) in this.categories" v-bind:key="index" v-on:click="this.selectCategory(cat)" :class="{ selected: this.selected == cat }" class="cat-box">
+                        <h2>{{ cat }}</h2>
+                    </div>
+                </info-box>
+            </div>
         </div>
     </div>
 </template>
@@ -34,9 +36,85 @@ export default {
                 previewImageLink: "src/assets/ThisWebPagePreview.png",
                 shortDescription: "The webpage you are currently looking at. Made as a Vue.js web application with vite.",
                 techs: ["HTML/CSS/JS", "Vue.js"],
-                link: "/projects/thiswebpage"
+                link: "thiswebpage"
             },
-
+            {
+                previewImageLink: "src/assets/ThisWebPagePreview.png",
+                title: "Activity Bot",
+                shortDescription: "A telegram bot for tracking your daily activity",
+                techs: ["Python", "SQL"],
+                link: "abot"
+            },
+            {
+                previewImageLink: "src/assets/biletx.png",
+                title: "BiletX and Sn[ea/ic]kers",
+                shortDescription: "'Mobile Applications' university course credit projects",
+                techs: ["Vue.js", "HTML/CSS/JS"],
+                link: "biletx"
+            },
+            {
+                previewImageLink: "src/assets/blife.png",
+                title: "BLife",
+                shortDescription: "My very first programming project. A python playground program implementing the genetic algorithm",
+                techs: ["Python"],
+                link: "blife"
+            },
+            {
+                previewImageLink: "src/assets/catsbombs.png",
+                title: "The Cats and Bombs Game",
+                shortDescription: "A turn-based browser game made with Python+Django, in which players must get to the fish and bring them to the finish line first, with opportunities to interfere with each other, of course",
+                techs: ["HTML/CSS/JS", "Python", "Django"],
+                link: "catsbombs"
+            },
+            {
+                previewImageLink: "src/assets/ccol.png",
+                title: "Colours Correction",
+                shortDescription: "A java program for manipulating images' colours",
+                techs: ["Java"],
+                link: "ccol"
+            },
+            {
+                previewImageLink: "src/assets/ThisWebPagePreview.png",
+                title: "MRP Project",
+                shortDescription: "A python script-webpage made as a credit project for the 'Integrated Systems' university course",
+                techs: ["Python", "HTML/CSS/JS", "Django"],
+                link: "mrp"
+            },
+            {
+                previewImageLink: "src/assets/ThisWebPagePreview.png",
+                title: "PyTranslations",
+                shortDescription: "A python library made to handle human-generated translations with variables",
+                techs: ["Python"],
+                link: "translations"
+            },
+            {
+                previewImageLink: "src/assets/rrat.png",
+                title: "RestRats",
+                shortDescription: "My thesis project. A website where you can create and review restaurants",
+                techs: ["HTML/CSS/JS", "Python", "Django"],
+                link: "rrat"
+            },
+            {
+                previewImageLink: "src/assets/ThisWebPagePreview.png",
+                title: "REST UEK Timetable",
+                shortDescription: "A rest api that scrapes the Cracow University of Economics' timetable",
+                techs: ["Python", "Django"],
+                link: "restuek"
+            },
+            {
+                previewImageLink: "src/assets/ThisWebPagePreview.png",
+                title: "Risk of Rain 2 Items",
+                shortDescription: "A small web page created to help me and my friends quickly find what a particular ROR2 item does",
+                techs: ["Python", "HTML/CSS/JS"],
+                link: "ror2"
+            },
+            {
+                previewImageLink: "src/assets/ThisWebPagePreview.png",
+                title: "Satanua",
+                shortDescription: "A python library that serves to generate decoder circuits for atanua, a program for designing electronic circuits",
+                techs: ["Python"],
+                link: "satanua"
+            },
             ]
         }
     },
