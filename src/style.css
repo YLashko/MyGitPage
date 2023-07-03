@@ -36,6 +36,7 @@ p {
 
 a {
     text-decoration: underline rgb(254, 255, 235);
+    color: rgb(254, 255, 235);
 }
 
 .col-right {
@@ -69,4 +70,10 @@ body {
 
 .menu {
     background-color: rgb(34, 35, 41);
+}
+
+.code {
+    padding: 12px;
+    background-color: rgb(28, 28, 28);
+    border-radius: 8px;
 }

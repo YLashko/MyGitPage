@@ -13,7 +13,7 @@
             <p>For this project, i've used the vue plugin "router" to manage routes.</p>
             <p>The page is compiled and deployed to GitHub Pages.</p>
             <p>The main page of the project is made in the form of a template main, which includes a menu with positions that point to the content components of the category. The data about the selected position is stored as a local variable, which creates the problem that when you return to this page from the project page, the data about the selected menu position is lost. I intend to fix this problem in the future by using store or redesigning the page to a format with a separate address for each category.</p>
-            <img src="/src/assets/ThisWebPagePreview.png" />
+            <img src="/src/assets/ThisWebPagePreview.jpg" />
         </info-box>
     </project-base>
 </template>
@@ -43,5 +43,8 @@ export default {
     }
     img {
         width: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 30px;
     }
 </style>

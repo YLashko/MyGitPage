@@ -20,6 +20,7 @@ import Projects from './Projects.vue';
 import MenuCategory from './items/MenuCategory.vue';
 import TheLetter from './TheLetter.vue';
 import { shallowRef } from 'vue';
+import { useStore } from 'vuex';
 export default {
     data: function () {
         return {
@@ -35,16 +36,15 @@ export default {
                 {
                     name: "Projects",
                     component: shallowRef(Projects)
-                },
-                {
-                    name: "Important!",
-                    component: shallowRef(TheLetter)
                 }
             ],
-            selectedCategory: 0
+            selectedCategory: 0,
+            store: useStore()
         };
     },
+
     components: { Home, AboutMe, Projects, MenuCategory },
+
     methods: {
         isSelected: function (categoryNumber) {
             return categoryNumber === this.selectedCategory;
@@ -56,7 +56,12 @@ export default {
 
         selectCategory: function (index) {
             this.selectedCategory = index;
+            this.store.dispatch("setMainMenuCategory", { cat: index });
         }
+    },
+
+    mounted: function() {
+        this.selectedCategory = this.store.getters.selected.mainMenuCategory;
     }
 }
 </script>

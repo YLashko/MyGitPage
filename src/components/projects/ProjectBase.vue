@@ -8,6 +8,9 @@
                 <h2 class="cat">Techs:</h2>
                 <p v-for="(tech, index) in techs" :key="index">{{ tech }}</p>
             </info-box>
+            <info-box>
+                <h3>Useful info above! ⬆️</h3>
+            </info-box>
         </div>
         <div class="col-lg-9 col-right"><slot /></div>
     </div>
@@ -25,6 +28,10 @@ export default {
         link: String
     },
     components: { InfoBox },
+
+    mounted: function() {
+        window.scrollTo(0, 0);
+    }
 }
 </script>
 

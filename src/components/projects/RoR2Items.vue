@@ -5,7 +5,25 @@
     :techs="project.techs"
     :link="project.link"
     :github="project.github">
-        
+    <info-box>
+        <p>The project was created when I found a great game called Risk of rain 2, but because of the specifics of the game, the entry threshold is much easier to overcome using a page like plationumgod.com for The Binding of Isaac. I couldn't find such a page, so I decided to create my own.</p>
+        <p>The point of the page is that when you hover your mouse over a particular item, information about its properties will pop up. Although the project is small, it has several interesting points.</p>
+        <p>All data for the page were collected from fandom wiki and packed directly as .InnerHTML file in JSON and also downloaded pictures, using mix of selenium and requests. The scraper works by iterating over possible table objects and checking to see if it's a table, since this site may have ads in random places in the same element, so simple hard-coded XPath scraping won't work.</p>
+        <pre class="code">
+for i in range(4, 15):
+    table = get_table(f'/html/body/div[4]/div[3]/div[3]/main/div[3]/div[2]/div/div[{i}]/table/tbody')
+    if (table != None) and not (table in tables_arr):
+        extracted = extract_table(table)
+        tables_json.append({
+            "Name" : tables_names[counter],
+            "Table" : extracted
+        })
+        print(f"Extracted {tables_names[counter]} - index {i}")
+        counter += 1
+        tables_arr.append(table)
+                </pre>
+        <img src="/src/assets/ror2.gif">
+    </info-box>
     </project-base>
 </template>
 
@@ -33,6 +51,9 @@ export default {
         text-indent: 30px;
     }
     img {
-        width: 50%;
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 30px;
     }
 </style>
