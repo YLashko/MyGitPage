@@ -5,7 +5,7 @@
     :techs="project.techs"
     :link="project.link"
     :github="project.github">
-        <info-box>
+        <info-box :noHoverAnim="true">
             <p>A project that is an api for scraping the schedule from the UEK University website by creating a request to the site using requests and bs4. Schedule data are written to the database and overwritten if the given record was received more than 30 minutes ago, this is done to reduce the number of outgoing requests to UEK servers and thereby speed up the api.</p>
             <p>There is a choice of query by time and date or by date only, but in any case a record is created in the database from the entire schedule, since the schedule page has data for all dates at once, so 1 query for the entire schedule is enough.</p>
             <p>The data returned by the API is as follows:</p>

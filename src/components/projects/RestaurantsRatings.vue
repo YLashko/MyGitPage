@@ -5,7 +5,7 @@
     :techs="project.techs"
     :link="project.link"
     :github="project.github">
-        <info-box>
+        <info-box :noHoverAnim="true">
             <p>My thesis project. A website in django serving to rate restaurants. The user has the ability to register/login, create a company profile and restaurant pages. It is also possible to create reviews on restaurants, rating them according to 3 criteria. It is also possible to filter restaurants by various criteria such as name, cuisine. The site is still a work in progress, maybe in the future I will add administration functionality and restaurant menus, but a lot of work has already been done.</p>
             <pre>Functionality currently implemented:
     - User profile creating/editing

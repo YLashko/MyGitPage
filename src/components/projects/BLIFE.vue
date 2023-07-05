@@ -5,7 +5,7 @@
     :techs="project.techs"
     :link="project.link"
     :github="project.github">
-        <info-box>
+        <info-box :noHoverAnim="true">
             <p>A project based on a project from one video on YT that I don't remember. </p>
             <p>Its main component is a map on which the "bots" are located. Bots can get energy, walk around, eat other bots or corpses, and so on. Each cell has an energy source; energy sources differ in the amount of energy extracted and the type of the energy.</p>
             <img src="/src/assets/blife_new.gif">

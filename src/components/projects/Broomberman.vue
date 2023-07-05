@@ -5,7 +5,7 @@
     :techs="project.techs"
     :link="project.link"
     :github="project.github">
-        <info-box>
+        <info-box :noHoverAnim="true">
             <p>My most recent project at this time - a browser game for 2-4 people. All players start at the prearranged start locations on the pre-created map, and try to get to the fish and bring it to the finish point. To create the game you need 1 device as a "monitor", on which you can see the outcome of the moves. Each player plays on his own device (preferably a cell phone), making a turn of 3 moves on the map squares and using a maximum of 1 bonus. Keys can open doors, removing them from the map, when dying the player moves to his starting position and the gold key and fish fall out on the square where the player died (if he had any).  ...Yeah, these white things are rocks</p>
             <img src="/src/assets/cats_bombs_2.gif">
             <p>The interest of the game is that each player does not know what bonuses each other player has and what move he will make.</p>
@@ -52,5 +52,6 @@ export default {
     .vertical-img {
         max-height: 80vh;
         width: auto;
+        max-width: 80%;
     }
 </style>

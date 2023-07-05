@@ -18,7 +18,6 @@ import Home from './Home.vue';
 import AboutMe from './AboutMe.vue';
 import Projects from './Projects.vue';
 import MenuCategory from './items/MenuCategory.vue';
-import TheLetter from './TheLetter.vue';
 import { shallowRef } from 'vue';
 import { useStore } from 'vuex';
 export default {
@@ -69,9 +68,5 @@ export default {
 <style scoped>
     .main {
         margin: 0;
-    }
-    .col-left {
-        position: sticky !important;
-        top: 0 !important;
     }
 </style>

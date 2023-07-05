@@ -47,7 +47,6 @@ export default {
         aspect-ratio: 16/9;
     }
     .project-container {
-        display: inherit;
         padding: 8px;
         margin: 16px 0px 16px 0px;
     }

@@ -5,7 +5,7 @@
     :techs="project.techs"
     :link="project.link"
     :github="project.github">
-        <info-box>
+        <info-box :noHoverAnim="true">
             <p>Library for python to easily create and use text translation dictionaries. Allows you to embed variables in text. Was created by me while studying the process of making a library for python, also I plan to use it for small projects and telegram bots (this library was created and extended from a class I wrote to handle translations in <a href="/projects/abot">ActivityBot</a>).</p>
             <p>The dictionary is created in a json file and is structured like this:</p>
             <pre class="code">

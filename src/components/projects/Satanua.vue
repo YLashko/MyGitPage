@@ -5,7 +5,7 @@
     :techs="project.techs"
     :link="project.link"
     :github="project.github">
-        <info-box>
+        <info-box :noHoverAnim="true">
             <p>A library for python created to generate .atanua files (xml scene save file for the circuits modeling program <a href="https://solhsa.com/atanua/">atanua</a>). Generates basically the whole decoder scene, using formulas for any number of inputs and outputs. I created it to simplify my homework (creating decoders by hand was pretty boring, some of them had over 200 logic gates!)</p>
             <p>Suppose we have formulas for a decoder that we don't want to model manually. For example, this would be:</p>
             <p>X = (!A * !B) + (A * B)</p>

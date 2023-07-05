@@ -1,6 +1,6 @@
 <template>
     <div class="menu-category-main" :class="{ isSelected: selected, isNotSelected: !selected }">
-        <h1>{{ title }}</h1>
+        <h1 :class="{ violet: selected }" class="cat-title">{{ title }}</h1>
     </div>
 </template>
 
@@ -16,34 +16,45 @@ export default {
 <style scoped>
     .menu-category-main {
         padding: 20px 40px 20px 40px;
-        margin: 16px 8px 16px 8px;
-        border-radius: 8px;
+        margin: 16px 0 16px 0;
         height: max-content;
         cursor: pointer;
-        z-index: -5;
     }
 
     .isSelected {
-        background-color: rgb(77, 77, 77);
+        background-color: rgba(0, 0, 0, 0);
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        border-right: 4px solid rgb(144, 43, 144);
         transition: all 0.2s ease-in-out;
     }
 
     .isSelected:hover {
-        background-color: rgb(77, 77, 77);
+        background-color: rgb(24, 24, 24);
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+        border-right: 4px solid rgb(144, 43, 144);
         transition: all 0.2s ease-in-out;
     }
 
     .isNotSelected {
-        background-color: rgb(51, 51, 51);
-        box-shadow: 2px 2px 2px rgb(27, 27, 27);
+        background-color: rgba(0, 0, 0, 0);
+        border-right: 0px solid rgb(144, 43, 144);
         transition: all 0.2s ease-in-out;
     }
 
     .isNotSelected:hover {
-        background-color: rgb(57, 57, 57);
-        box-shadow: 2px 2px 2px rgb(27, 27, 27);
+        background-color: rgb(24, 24, 24);
+        border-right: 2px solid rgb(144, 43, 144);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .cat-title {
+        transition: all 0.2s ease-in-out;
+        text-shadow: 2px 2px rgb(144, 43, 144);
+    }
+
+    .violet {
+        color: rgb(144, 43, 144);
+        text-shadow: 0px 0px rgb(0, 0, 0, 0);
         transition: all 0.2s ease-in-out;
     }
 </style>

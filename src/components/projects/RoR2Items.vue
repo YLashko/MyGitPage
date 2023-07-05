@@ -5,7 +5,7 @@
     :techs="project.techs"
     :link="project.link"
     :github="project.github">
-    <info-box>
+    <info-box :noHoverAnim="true">
         <p>The project was created when I found a great game called Risk of rain 2, but because of the specifics of the game, the entry threshold is much easier to overcome using a page like plationumgod.com for The Binding of Isaac. I couldn't find such a page, so I decided to create my own.</p>
         <p>The point of the page is that when you hover your mouse over a particular item, information about its properties will pop up. Although the project is small, it has several interesting points.</p>
         <p>All data for the page were collected from fandom wiki and packed directly as .InnerHTML file in JSON and also downloaded pictures, using mix of selenium and requests. The scraper works by iterating over possible table objects and checking to see if it's a table, since this site may have ads in random places in the same element, so simple hard-coded XPath scraping won't work.</p>

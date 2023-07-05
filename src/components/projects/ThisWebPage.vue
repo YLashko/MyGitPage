@@ -5,8 +5,7 @@
     :techs="project.techs"
     :link="project.link"
     :github="project.github">
-        <info-box
-        :title="''">
+        <info-box :noHoverAnim="true">
             <p>This is my web page! It's purpose is to compose all the information about me as a programmer in one place.</p>
             <p>This project is made with Vuejs + vite, this is my first experience of creating a components structure more complicated than 
             "make 1 component for each view, exclude header and footer".</p>

@@ -5,7 +5,7 @@
     :techs="project.techs"
     :link="project.link"
     :github="project.github">
-        <info-box>
+        <info-box :noHoverAnim="true">
             <p>The program allows you to calculate the basic MRP algorithm, I made it as a project for the course credit for integrated systems.</p>
             <p>The project was originally written in python and was supposed to take data from a json file or a python class tree, and output to html or csv. However, I found out later that most of the score was the user interface, so I had to make it as an html document and bind django.</p>
             <p>The algorithm is that in the product tree on the basis of the demand table, production time, batch size and planned supplies the table of production of the current level and product demands of the next level is calculated.</p>

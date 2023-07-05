@@ -11,7 +11,7 @@
         </div>
         <div class="col-lg-3 order-1 order-lg-2">
             <div class="sticky-lg-top">
-                <info-box :title="'Filter'">
+                <info-box :title="'Filter'" :noHoverAnim="true">
                     <div v-for="(cat, index) in this.categories" v-bind:key="index" v-on:click="this.selectCategory(cat)" :class="{ selected: this.selected == cat }" class="cat-box">
                         <h2>{{ cat }}</h2>
                     </div>
@@ -152,24 +152,28 @@ export default {
 <style scoped>
     .cat-box {
         padding: 7px 8px 1px 8px;
-        border-radius: 8px;
+        margin: 0;
         cursor: pointer;
         background-color: rgba(0, 0, 0, 0);
-        transition: background-color 0.2s ease-in-out;
+        box-shadow: 0 0 0 0 rgb(144, 43, 144);
+        transition: all 0.2s ease-in-out;
     }
 
     .cat-box:hover {
-        background-color: rgb(57, 57, 57);
-        transition: background-color 0.1s ease-in-out;
+        background-color: rgba(255, 255, 255, 0.07);
+        box-shadow: 0 4px 0 0 rgb(144, 43, 144);
+        transition: all 0.2s ease-in-out;
     }
 
     .selected {
-        background-color: rgb(77, 77, 77);
-        transition: background-color 0.2s ease-in-out;
+        background-color: rgba(255, 255, 255, 0.07);
+        box-shadow: 0 1px 0 0 rgb(144, 43, 144);
+        transition: all 0.2s ease-in-out;
     }
 
     .selected:hover {
-        background-color: rgb(77, 77, 77);
-        transition: background-color 0.2s ease-in-out;
+        background-color: rgba(255, 255, 255, 0.07);
+        box-shadow: 0 4px 0 0 rgb(144, 43, 144);
+        transition: all 0.2s ease-in-out;
     }
 </style>
