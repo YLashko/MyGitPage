@@ -26,7 +26,6 @@ export default {
         margin: 16px 8px 16px 8px;
         border-left: 4px solid rgb(144, 43, 144);
         background-color: rgb(7, 7, 7);
-        box-shadow: 2px 2px 2px rgb(7, 7, 7);
         transition: all 0.3s ease-in-out;
         cursor: pointer;
     }

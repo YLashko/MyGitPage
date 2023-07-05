@@ -1,13 +1,15 @@
 <template>
     <div class="row">
         <div class="col-lg-9 order-2 order-lg-1">
-            <ProjectCard v-for="(project, index) in this.selectedProjects()" :key="index"
-            :title="project.title" 
-            :techs="project.techs" 
-            :previewImageLink="project.previewImageLink"
-            :shortDescription="project.shortDescription"
-            :link="'/projects/' + project.link"
-            :id="index" />
+            <div class="projects-col">
+                <ProjectCard v-for="(project, index) in this.selectedProjects()" :key="index"
+                :title="project.title" 
+                :techs="project.techs" 
+                :previewImageLink="project.previewImageLink"
+                :shortDescription="project.shortDescription"
+                :link="'/projects/' + project.link"
+                :id="index" />
+            </div>
         </div>
         <div class="col-lg-3 order-1 order-lg-2">
             <div class="sticky-lg-top">
@@ -175,5 +177,9 @@ export default {
         background-color: rgba(255, 255, 255, 0.07);
         box-shadow: 0 4px 0 0 rgb(144, 43, 144);
         transition: all 0.2s ease-in-out;
+    }
+
+    .projects-col {
+        background-color: rgb(7, 7, 7);
     }
 </style>
