@@ -23,7 +23,7 @@ export default {
         return {
             project: {
                 title: "Colors Correction",
-                github: "https://github.com/YLashko/colorsCorrection",
+                github: "https://github.com/YLashko/ColorsCorrection",
                 shortDescription: "A java program for manipulating images' colors",
                 techs: ["Java"],
                 link: ""

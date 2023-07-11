@@ -49,6 +49,11 @@ export default {
     .project-container {
         padding: 8px;
         margin: 16px 0px 16px 0px;
+        transition: transform 0.2s ease-in-out;
+    }
+    .project-container:hover {
+        transform: scale(1.025);
+        transition: transform 0.2s ease-in-out;
     }
 
     .tech-container {

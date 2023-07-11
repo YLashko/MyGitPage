@@ -15,6 +15,10 @@
             <a href="https://www.linkedin.com/in/yahor-lashko-a1a222253/"><p>LinkedIn</p></a>
             <a href="https://www.codewars.com/users/WymAx"><p>Codewars</p></a>
             </InfoBox>
+            <info-box
+            :title="'My work environment'"
+            :contents="['Win10/11', 'VSCode', 'Pycharm/Intellij', 'GitHub', 'Docker', 'Microsoft Office/Google Docs']">
+            </info-box>
         </div>
         <div class="col-lg-6 inner-col-right">
             <InfoBox 
@@ -30,6 +34,12 @@
             'Vue.js - ⭐⭐',
             'Pandas - ⭐⭐',
             'Selenium - ⭐⭐']">
+            </InfoBox>
+            <InfoBox 
+            title="Download">
+            <a href="/src/downloads/Transcript_of_records-219145.pdf"><p>Grades transcript</p></a>
+            <a href="/src/downloads/CV_Yahor_Lashko_en.pdf"><p>--> CV &lt;--</p></a>
+            <a href="mailto: dewreator2@gmail.com"><p>If the recruitment process requires my work permit, you can email me.</p></a>
             </InfoBox>
         </div>
     </div>

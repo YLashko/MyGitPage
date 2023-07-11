@@ -24,15 +24,17 @@ export default {
     .info-box {
         padding: 20px 40px 20px 40px;
         margin: 16px 8px 16px 8px;
-        border-left: 4px solid rgb(144, 43, 144);
+        border-left: 3px solid rgb(144, 43, 144);
+        box-shadow: 0px 0px 0px rgb(144, 43, 144);
         background-color: rgb(7, 7, 7);
         transition: all 0.3s ease-in-out;
         cursor: pointer;
     }
 
     .hover:hover {
-        border-left: 8px solid rgb(144, 43, 144);
+        box-shadow: -4px 0px 0px rgb(144, 43, 144);
         background-color: rgb(24, 24, 24);
+        padding-left: 45px;
         transition: all 0.3s ease-in-out;
         cursor: pointer;
     }

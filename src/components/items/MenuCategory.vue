@@ -23,27 +23,28 @@ export default {
 
     .isSelected {
         background-color: rgba(0, 0, 0, 0);
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-        border-right: 4px solid rgb(144, 43, 144);
+        box-shadow: 2px 0px 0px rgb(144, 43, 144);
+        padding-left: 45px;
         transition: all 0.2s ease-in-out;
     }
 
     .isSelected:hover {
         background-color: rgb(24, 24, 24);
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-        border-right: 4px solid rgb(144, 43, 144);
+        box-shadow: 4px 0px 0px rgb(144, 43, 144);
+        padding-left: 45px;
         transition: all 0.2s ease-in-out;
     }
 
     .isNotSelected {
         background-color: rgba(0, 0, 0, 0);
-        border-right: 0px solid rgb(144, 43, 144);
+        box-shadow: 0px 0px 0px rgb(144, 43, 144);
         transition: all 0.2s ease-in-out;
     }
 
     .isNotSelected:hover {
         background-color: rgb(24, 24, 24);
-        border-right: 2px solid rgb(144, 43, 144);
+        box-shadow: 2px 0px 0px rgb(144, 43, 144);
+        padding-left: 45px;
         transition: all 0.2s ease-in-out;
     }
 

@@ -4,7 +4,7 @@
             <info-box :title="title" :contents="[shortDescription]">
                 <a :href="github"><p>GitHub</p></a>
                 <a v-if="![null, '', undefined].includes(link)" :href="link"><p>Link</p></a>
-                <a v-else><p>No link!</p></a>
+                <a v-else><p>No website link!</p></a>
                 <h2 class="cat">Techs:</h2>
                 <p v-for="(tech, index) in techs" :key="index">{{ tech }}</p>
             </info-box>

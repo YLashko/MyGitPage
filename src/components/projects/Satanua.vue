@@ -62,7 +62,7 @@ export default {
             project: {
                 title: "Satanua",
                 github: "https://github.com/YLashko/satanua",
-                shortDescription: "A python library that serves to generate decoder circuits for atanua, a program for designing electronic circuits",
+                shortDescription: "A python library that serves to generate decoder scheme for atanua, a program for designing logic schemes",
                 techs: ["Python"],
                 link: ""
             }
