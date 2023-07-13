@@ -31,7 +31,7 @@ export default {
   components: { InfoBox, ProjectCard },
     data: function() {
         return {
-            categories: [ "Python", "Django", "SQL", "JS", "Java", "HTML/CSS/JS", "Vue.js" ],
+            categories: [ "Python", "Django", "SQL", "Pandas", "Java", "HTML/CSS/JS", "Vue.js" ],
             selected: null,
             store: useStore(),
             projects: [
@@ -118,6 +118,13 @@ export default {
                 shortDescription: "A python library that serves to generate decoder circuits for atanua, a program for designing electronic circuits",
                 techs: ["Python"],
                 link: "satanua"
+            },
+            {
+                previewImageLink: "src/assets/stack_overflow_learn.jpg",
+                title: "Stack Overflow survey analysis",
+                shortDescription: "A Stack Overflow survey analysis with Pandas + Torch",
+                techs: ["Python", "Pandas"],
+                link: "sos"
             },
             ]
         }

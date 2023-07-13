@@ -20,6 +20,12 @@ h2 {
     font-size: 28px;
 }
 
+.default-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
 h1 {
     font-family: 'Lato', sans-serif;
     font-size: 30px;
@@ -51,7 +57,6 @@ body {
     border-radius: 0;
     height: max-content;
     cursor: pointer;
-    background-color: rgb(7, 7, 7);
     box-shadow: 0 0 0 0 rgb(144, 43, 144);
     box-sizing: border-box;
     -moz-box-sizing: border-box;

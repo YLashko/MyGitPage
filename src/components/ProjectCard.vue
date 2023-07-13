@@ -49,11 +49,13 @@ export default {
     .project-container {
         padding: 8px;
         margin: 16px 0px 16px 0px;
-        transition: transform 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        background-color: rgb(7, 7, 7);
     }
     .project-container:hover {
         transform: scale(1.025);
-        transition: transform 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        background-color: rgb(20, 20, 20);
     }
 
     .tech-container {
