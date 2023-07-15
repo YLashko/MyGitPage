@@ -42,6 +42,7 @@ p {
 a {
     text-decoration: underline rgb(254, 255, 235);
     color: rgb(254, 255, 235);
+    transition: all 0.2s ease-in-out;
 }
 
 .col-right {

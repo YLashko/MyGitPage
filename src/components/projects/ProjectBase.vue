@@ -2,9 +2,10 @@
     <div class="row">
         <div class="col-lg-3 col-left sticky-lg-top">
             <info-box :title="title" :contents="[shortDescription]">
-                <a :href="github"><p>GitHub</p></a>
-                <a v-if="![null, '', undefined].includes(link)" :href="link"><p>Link</p></a>
-                <a v-else><p>No website link!</p></a>
+                <a :href="github"><p><img class="github-icon" src="/src/assets/github-mark-white.png" />Github link</p></a>
+                <p>🌐 <a v-if="![null, '', undefined].includes(link)" :href="link">Website link</a>
+                <a v-else>No website link!</a></p>
+                <p>📅 {{ date }}</p>
                 <h2 class="cat">Techs:</h2>
                 <p v-for="(tech, index) in techs" :key="index">{{ tech }}</p>
             </info-box>
@@ -25,7 +26,8 @@ export default {
         shortDescription: String,
         techs: Array,
         github: String,
-        link: String
+        link: String,
+        date: String
     },
     components: { InfoBox },
 
@@ -47,5 +49,10 @@ export default {
     }
     .row {
         margin: 0;
+    }
+    .github-icon {
+        height: 22px;
+        margin-right: 5px;
+        margin-left: 4px;
     }
 </style>

@@ -4,7 +4,8 @@
     :shortDescription="project.shortDescription"
     :techs="project.techs"
     :link="project.link"
-    :github="project.github">
+    :github="project.github"
+    :date="project.date">
     <info-box :noHoverAnim="true">
         <p>The project was created when I found a great game called Risk of rain 2, but because of the specifics of the game, the entry threshold is much easier to overcome using a page like plationumgod.com for The Binding of Isaac. I couldn't find such a page, so I decided to create my own.</p>
         <p>The point of the page is that when you hover your mouse over a particular item, information about its properties will pop up. Although the project is small, it has several interesting points.</p>
@@ -39,7 +40,8 @@ export default {
                 github: "https://github.com/YLashko/YLashko.github.io",
                 shortDescription: "A small web page created to help me and my friends quickly find what a particular ROR2 item does",
                 techs: ["Python", "HTML/CSS/JS"],
-                link: "https://ylashko.github.io/"
+                link: "https://ylashko.github.io/",
+                date: "May 1, 2022 - May 2, 2022"
             }
         }
     }

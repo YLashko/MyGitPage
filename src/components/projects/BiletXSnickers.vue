@@ -4,7 +4,8 @@
     :shortDescription="project.shortDescription"
     :techs="project.techs"
     :link="project.link"
-    :github="project.github">
+    :github="project.github"
+    :date="project.date">
         <info-box :noHoverAnim="true">
             <p>Projects I did for credit for 'Mobile Applications' university course (except for about 85% of the appearance of BiletX - it was made by a my friend with whom we were on the same project team).</p>
             <p>Both applications are written using Vue.js and are very similar in structure, they use vue-router to manage url addresses and vue-store to save data about the logged in user. The database is google firebase, communication with the database is done via hardcoded queries to google firebase api.</p>
@@ -27,7 +28,8 @@ export default {
                 github: "https://github.com/YLashko/bilet-app",
                 shortDescription: "'Mobile Applications' university course credit projects",
                 techs: ["Vue.js", "HTML/CSS/JS"],
-                link: ""
+                link: "",
+                date: "Apr 27, 2023 - May 17, 2023"
             }
         }
     }

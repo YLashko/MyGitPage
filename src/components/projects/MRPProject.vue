@@ -4,7 +4,8 @@
     :shortDescription="project.shortDescription"
     :techs="project.techs"
     :link="project.link"
-    :github="project.github">
+    :github="project.github"
+    :date="project.date">
         <info-box :noHoverAnim="true">
             <p>The program allows you to calculate the basic MRP algorithm, I made it as a project for the course credit for integrated systems.</p>
             <p>The project was originally written in python and was supposed to take data from a json file or a python class tree, and output to html or csv. However, I found out later that most of the score was the user interface, so I had to make it as an html document and bind django.</p>
@@ -28,7 +29,8 @@ export default {
                 github: "https://github.com/YLashko/MRP_project",
                 shortDescription: "A python script-webpage made as a credit project for the 'Integrated Systems' university course",
                 techs: ["Python", "HTML/CSS/JS", "Django"],
-                link: ""
+                link: "",
+                date: "Mar 16, 2023 - Mar 29, 2023"
             }
         }
     }

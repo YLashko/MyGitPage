@@ -4,7 +4,8 @@
     :shortDescription="project.shortDescription"
     :techs="project.techs"
     :link="project.link"
-    :github="project.github">
+    :github="project.github"
+    :date="project.date">
         <info-box :noHoverAnim="true">
             <p>This is my web page! It's purpose is to compose all the information about me as a programmer in one place.</p>
             <p>This project is made with Vuejs + vite, this is my first experience of creating a components structure more complicated than 
@@ -29,7 +30,8 @@ export default {
                 github: "https://github.com/YLashko/MyGitPage",
                 shortDescription: "The webpage you are currently looking at. Made as a Vue.js web application with Vite",
                 techs: ["HTML/CSS/JS", "Vue.js"],
-                link: ""
+                link: "",
+                date: "Jun 24, 2023 - Today"
             }
         }
     }

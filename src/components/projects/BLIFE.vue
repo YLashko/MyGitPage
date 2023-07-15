@@ -4,7 +4,8 @@
     :shortDescription="project.shortDescription"
     :techs="project.techs"
     :link="project.link"
-    :github="project.github">
+    :github="project.github"
+    :date="project.date">
         <info-box :noHoverAnim="true">
             <p>A project based on a project from one video on YT that I don't remember. </p>
             <p>Its main component is a map on which the "bots" are located. Bots can get energy, walk around, eat other bots or corpses, and so on. Each cell has an energy source; energy sources differ in the amount of energy extracted and the type of the energy.</p>
@@ -29,7 +30,8 @@ export default {
                 github: "https://github.com/YLashko/Blife-kivy",
                 shortDescription: "My very first programming project. A python playground program implementing the genetic algorithm",
                 techs: ["Python"],
-                link: ""
+                link: "",
+                date: "Mar 8, 2021 - May 26, 2021"
             }
         }
     }

@@ -4,7 +4,8 @@
     :shortDescription="project.shortDescription"
     :techs="project.techs"
     :link="project.link"
-    :github="project.github">
+    :github="project.github"
+    :date="project.date">
         <info-box :noHoverAnim="true">
             <p>The main goal of the project is to analyse StackOverflow survey data and create a neural network to predict salary based on other data present in a survey dataset.</p>
             <p>The project consists of preparing the data for training the neural network, initial analysis of the data for errors, and training the neural network. As a result of the initial preparation phase, I selected and kept the most important variables in my opinion, deleted records with unrealistically large salaries, converted some data into another form, for example, tech stack was in the form of a string with technologies separated by a specific sign, I converted this data into a form in which each unique technology has its own column and as data a logical variable indicating whether there is such a technology in the stack. I did the same operation with other variables, where the data were in the form of a choice of several options.</p>
@@ -27,7 +28,8 @@ export default {
                 github: "https://github.com/YLashko/stack-overflow-survey-analysis",
                 shortDescription: "A Stack Overflow survey analysis with Pandas + Torch",
                 techs: ["Python", "Pandas"],
-                link: ""
+                link: "",
+                date: "~Jun 3, 2023 - Jun 6, 2023"
             }
         }
     }
