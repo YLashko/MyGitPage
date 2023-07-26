@@ -31,7 +31,7 @@ export default {
   components: { InfoBox, ProjectCard },
     data: function() {
         return {
-            categories: [ "Python", "Django", "SQL", "Pandas", "Java", "HTML/CSS/JS", "Vue.js" ],
+            categories: [ "Python", "Django", "Flask", "SQL", "Pandas", "Java", "HTML/CSS/JS", "Vue.js"],
             selected: null,
             store: useStore(),
             projects: [
@@ -41,6 +41,13 @@ export default {
                 shortDescription: "The webpage you are currently looking at. Made as a Vue.js web application with vite.",
                 techs: ["HTML/CSS/JS", "Vue.js"],
                 link: "thiswebpage"
+            },
+            {
+                previewImageLink: "src/assets/easy_stickers_start.jpg",
+                title: "EasyStickers Bot",
+                shortDescription: "A bot on telegram for converting images and videos into a desired format and changing their parameters so that they can be used to create stickers by simply forwarding them to the official bot interface for creating stickers.",
+                techs: ["Python", "Flask", "SQL"],
+                link: "eas",
             },
             {
                 previewImageLink: "src/assets/abot.jpg",
