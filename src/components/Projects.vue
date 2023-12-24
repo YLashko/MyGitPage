@@ -133,6 +133,13 @@ export default {
                 techs: ["Python", "Pandas"],
                 link: "sos"
             },
+            {
+                previewImageLink: "src/assets/image_bubble_sort.jpg",
+                title: "Image Bubble Sort",
+                shortDescription: "A program for playing with sorting pixels",
+                techs: ["Java"],
+                link: "ims"
+            },
             ]
         }
     },

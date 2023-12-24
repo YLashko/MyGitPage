@@ -20,6 +20,7 @@ import Projects from './Projects.vue';
 import MenuCategory from './items/MenuCategory.vue';
 import { shallowRef } from 'vue';
 import { useStore } from 'vuex';
+import WorkExperience from './WorkExperience.vue';
 export default {
     data: function () {
         return {
@@ -35,6 +36,10 @@ export default {
                 {
                     name: "Projects",
                     component: shallowRef(Projects)
+                },
+                {
+                    name: "Work experience",
+                    component: shallowRef(WorkExperience)
                 }
             ],
             selectedCategory: 0,

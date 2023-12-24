@@ -3,7 +3,7 @@
         <div class="col-lg-6 inner-col-left">
             <InfoBox
             title="Education" 
-            v-bind:contents="['Cracow University of Economics', 'Applied Informatics (Informatyka Stosowana)', 'Bachelor\'s degree', 'GPA - 4.4 (expected)', 'Oct 2020 - Oct 2023']">
+            v-bind:contents="['Cracow University of Economics', 'Applied Informatics (Informatyka Stosowana)', 'Bachelor\'s degree', 'GPA - 4.41', 'Oct 2020 - Oct 2023']">
             </InfoBox>
             <InfoBox 
             title="Contact me" 
@@ -17,7 +17,7 @@
             </InfoBox>
             <info-box
             :title="'My work environment'"
-            :contents="['Win10/11', 'VSCode', 'Pycharm/Intellij', 'GitHub', 'Docker', 'Microsoft Office/Google Docs']">
+            :contents="['Win10/11, Linux Raspbian', 'VSCode/Pycharm/Intellij', 'GitHub', 'Docker', 'Microsoft Office/Google Docs', 'SQL Server Management Studio']">
             </info-box>
         </div>
         <div class="col-lg-6 inner-col-right">
@@ -39,6 +39,7 @@
             title="Download">
             <a href="/src/downloads/Transcript_of_records-219145.pdf"><p>Grades transcript</p></a>
             <a href="/src/downloads/CV_Yahor_Lashko_en.pdf"><p>--> CV &lt;--</p></a>
+            <a href="/src/downloads/YLashko_praca_dyplomowa.pdf"><p>Thesis</p></a>
             <a href="mailto: dewreator2@gmail.com"><p>If the recruitment process requires my work permit, you can email me.</p></a>
             </InfoBox>
         </div>

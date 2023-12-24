@@ -16,7 +16,7 @@
             <p>The game has a user management system and a lobby system (multiple games running simultaneously are supported).</p>
             <img src="/src/assets/cats_bombs_lobby.jpg">
             <p>I used the pixijs library to create the graphics, the script for the movement and bonuses animations was written by myself.</p>
-            <p>It is still WIP! There are some not gamebreaking bugs, I will fix everything and add some maps after I do my thesis.</p>
+            <p>It is still WIP! There are some not gamebreaking bugs, I will fix everything and add some maps some time in the future.</p>
         </info-box>
     </project-base>
 </template>

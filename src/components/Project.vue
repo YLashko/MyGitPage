@@ -17,7 +17,8 @@ import RESTUEKTimetable from './projects/RESTUEKTimetable.vue';
 import RoR2Items from './projects/RoR2Items.vue';
 import Satanua from './projects/Satanua.vue';
 import StackOverflowSurvey from './projects/StackOverflowSurvey.vue';
-import EasyStickers from './projects/EasyStickers.vue'
+import EasyStickers from './projects/EasyStickers.vue';
+import ImageSort from './projects/ImageSort.vue';
 export default {
     components: { ThisWebPage },
     data: function() {
@@ -36,7 +37,8 @@ export default {
                 "ror2": shallowRef(RoR2Items),
                 "satanua": shallowRef(Satanua),
                 "sos": shallowRef(StackOverflowSurvey),
-                "eas": shallowRef(EasyStickers)
+                "eas": shallowRef(EasyStickers),
+                "ims": shallowRef(ImageSort),
             }
         }
     }

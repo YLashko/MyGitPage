@@ -7,9 +7,9 @@
     :github="project.github"
     :date="project.date">
         <info-box :noHoverAnim="true">
-            <p>A bot for recording daily activity reports. Each day at a certain time sends all users a message/reminder about the activity record, one activity record consists of 4 fields: relative/absolute score of mood, relative/absolute score of the work done. The bot then collects all of the user's scores and sends them back to the user as a csv file.</p>
+            <p>A bot for recording daily activity reports. Each day at a certain time sends all users a message/reminder about the activity record, one activity record consists of 4 fields: relative/absolute score of mood, relative/absolute score of the work done. The bot then collects all of user's scores and sends them back to user as a csv file.</p>
             <p>The bot was created using the pytelegrambotapi and sqlite3 libraries (with the sqlite database, respectively). All database queries are stored in a .py file as functions with changeable parameters, from where they can be easily used.</p>
-            <p>Currently the bot is running in the docker container on my raspberry, for which I created a bash script to quickly update from dockerhub and run the current version of the bot.</p>
+            <p>Currently the bot is running in the docker container on my raspberry, for which I created a bash script to quickly update from dockerhub and run current version of the bot.</p>
         </info-box>
     </project-base>
 </template>
