@@ -1,9 +1,9 @@
 <script setup>
-import router from './routes/index.js';
+    import router from './routes/index.js';
 </script>
 
 <template>
-  <router-view />
+    <router-view />
 </template>
 
 <style scoped>
