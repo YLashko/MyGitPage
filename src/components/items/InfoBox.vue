@@ -34,6 +34,7 @@ export default {
         box-shadow: -4px 0px 0px rgb(144, 43, 144);
         background-color: rgb(24, 24, 24);
         padding-left: 45px;
+        margin-right: 3px;
         transition: all 0.3s ease-in-out;
     }
 

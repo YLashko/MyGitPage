@@ -6,7 +6,7 @@
                 :previewImageLink="blog.previewImageLink"
                 :shortDescription="blog.shortDescription"
                 :timeToRead="blog.timeToRead"
-                :link="'/projects/' + blog.link"
+                :link="'/blogs/' + blog.link"
                 :id="index"
             ></blog-card>
         </div>
@@ -32,7 +32,7 @@ export default {
                     title: "Oracle APEX - Dynamic region layout based on user input",
                     previewImageLink: "src/assets/Apex.jpg",
                     shortDescription: "Making Oracle apex regions layout responsive and dynamic with the ability to be configurated by the end user, hopefully without breaking anything",
-                    timeToRead: '~20 min',
+                    timeToRead: '~10 min read',
                     link: "oracle-apex-dynamic-regions-layout"
                 }
             ]
@@ -50,7 +50,7 @@ export default {
 </script>
 
 <style scoped>
-    /* .cat-box {
+    .cat-box {
         padding: 7px 8px 1px 8px;
         margin: 0;
         cursor: pointer;
@@ -79,5 +79,5 @@ export default {
 
     .blogs-col {
         background-color: rgb(7, 7, 7);
-    } */
+    }
 </style>

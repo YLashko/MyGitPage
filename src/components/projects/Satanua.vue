@@ -11,7 +11,7 @@
             <p>Suppose we have formulas for a decoder that we don't want to model manually. For example, this would be:</p>
             <p>X = (!A * !B) + (A * B)</p>
             <p>Y = (!A + B) * (A + !B)</p>
-            <p>where X, Y are outputs and A, B are inputs. For an input with negation the number in the corresponding array will be 0, for an input without negation 1. It is also possible to set what comes first: addition or multiplication. Then, the input for the program will be as follows (0 is not, 1 is ):</p>
+            <p>where X, Y are outputs and A, B are inputs. For an input with negation the number in the corresponding array will be 0, for an input without negation 1. It is also possible to set what comes first: addition or multiplication. Then, the input for the program will be as follows (0 is negated input, 1 is not negated):</p>
             <pre class="code">
 obj_stack = ObjStack()
 wire_stack = WireStack()
