@@ -241,7 +241,7 @@
                         Here, I've decided to load the regions as a flattened array for the sake of simplicity, and the strategy
                         for loading the regions is to have them all loaded in a single 'bucket' region each having a server-side 
                         condition, to not load the unnecessaty regions. After the regions are loaded, we manually go through
-                        the rows first, create the rows, then go through filtered (again!) regions, and append them to their row,
+                        the rows first, create the rows, then go through sorted (again!) regions, and append them to their row,
                         this is done in a load_dashboard function:
                         <pre class="code">{{ loadDashboardFunction }}</pre>
                     </p>
