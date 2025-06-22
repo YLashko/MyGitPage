@@ -32,7 +32,7 @@ export default {
                     title: "Oracle APEX - Dynamic region layout based on user input",
                     previewImageLink: "src/assets/Apex.jpg",
                     shortDescription: "Making Oracle apex regions layout responsive and dynamic with the ability to be configurated by the end user, hopefully without breaking anything",
-                    timeToRead: '~10 min read',
+                    timeToRead: '~15 min read',
                     link: "oracle-apex-dynamic-regions-layout"
                 }
             ]

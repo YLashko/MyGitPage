@@ -69,7 +69,6 @@ export default {
         },
 
         getSelectedCategoryComponent: function () {
-            console.log(this.$route.params.category);
             if (this.selectedCategory === null) {
                 return null;
             }
